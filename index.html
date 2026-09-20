@@ -1,228 +1,801 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Sergio Varela</title>
+	<meta charset="UTF-8">
 
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="portafolio/CSS/style.css">
+	<meta name="description"
+		content="Sergio Varela - Software Developer specialized in web development, cybersecurity and automation.">
 
+	<meta name="author" content="Sergio Varela">
+
+	<link rel="icon" type="image/png" href="./portafolio/images/quote.png">
+
+	<title>Sergio Varela | Software Developer</title>
+
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+		rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="portafolio/CSS/style.css">
 </head>
+
 <body>
 
-	<!-- Particulas-->
-    <div id="particles-js"></div>
-    
-<!-- header section starts  -->
-<header class="header">
+	<!-- Background -->
+	<div id="particles-js"></div>
 
-    <a href="#" class="logo">
-        <h1>Sergio Varela</h1>
-    </a>
+	<!-- ================= HEADER ================= -->
 
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#skills">Skills</a>
-		<a href="#projects">Projects</a>
-        <a href="#contact">Let's Connect</a>
-		
-    </nav>
+	<header class="header">
 
-	
-    <div class="icons">
-		<a href="https://www.facebook.com/sergio.varela.1401" target="https://www.facebook.com/sergio.varela.1401"><div  class="fab fa-facebook-f" ></div></a>
-        <a href="https://www.linkedin.com/in/sergio-varela-43a484249/" target="https://www.linkedin.com/in/sergio-varela-43a484249/"><div class="fab fa-linkedin"></div></a>
-        
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
+		<a href="#home" class="logo">
+			Sergio<span>.</span>
+		</a>
 
-	
-</header>
+		<nav class="navbar" id="navbar">
 
-<!-- header section ends -->
+			<a href="#about">About</a>
+			<a href="#skills">Skills</a>
+			<a href="#projects">Projects</a>
+			<a href="#contact">Contact</a>
 
-<!--home section starts-->
-<section class="home" id="home">
-	<div class="content">
-		<h3 class="titulo">Hi! I'm Sergio <br><span class="typed"></span></h3>
-		<p class="descripcion">I am a person with self-taught
-			capacity, equally resilient and therefore
-			I easily adapt to any situation, I also
-			consider myself a person who can
-			easily work in a team.
+		</nav>
+
+		<div class="header-actions">
+
+			<a href="https://github.com/varela-lang" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+				<i class="fab fa-github"></i>
+			</a>
+
+			<a href="https://www.linkedin.com/in/sergio-varela-43a484249/" target="_blank" rel="noopener noreferrer"
+				aria-label="LinkedIn">
+				<i class="fab fa-linkedin"></i>
+			</a>
+
+			<button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">
+				<i class="fas fa-bars"></i>
+			</button>
+
+		</div>
+
+	</header>
+
+
+	<main>
+
+		<!-- ================= HERO ================= -->
+
+		<section class="hero" id="home">
+
+			<div class="hero-content">
+
+				<p class="eyebrow">
+					<span class="terminal-symbol">&gt;</span>
+					Hello, world!
+				</p>
+
+				<h1>
+					I'm Sergio<br>
+					<span class="gradient-text">Varela.</span>
+				</h1>
+
+				<h2>
+					<span class="typed"></span>
+				</h2>
+
+				<p class="hero-description">
+					Software developer focused on building web and mobile
+					applications, automation solutions and cybersecurity tools.
+				</p>
+
+				<div class="hero-buttons">
+
+					<a href="#projects" class="btn btn-primary">
+						View my work
+						<i class="fas fa-arrow-right"></i>
+					</a>
+
+					<a href="https://github.com/varela-lang" target="_blank" rel="noopener noreferrer"
+						class="btn btn-secondary">
+						<i class="fab fa-github"></i>
+						GitHub
+					</a>
+
+				</div>
+
+				<div class="hero-stack">
+
+					<span>React</span>
+					<span>React Native</span>
+					<span>Node.js</span>
+					<span>Python</span>
+					<span>Cybersecurity</span>
+
+				</div>
+
+			</div>
+
+			<div class="hero-visual">
+
+				<div class="code-window">
+
+					<div class="window-header">
+
+						<div class="window-dots">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+
+						<span class="window-title">
+							sergio.dev
+						</span>
+
+					</div>
+
+					<div class="code-content">
+
+						<p>
+							<span class="code-purple">const</span>
+							developer
+							<span class="code-purple">=</span>
+						</p>
+
+						<p class="indent">
+							{
+						</p>
+
+						<p class="indent-2">
+							name:
+							<span class="code-green">
+								"Sergio Varela"
+							</span>,
+						</p>
+
+						<p class="indent-2">
+							role:
+							<span class="code-green">
+								"Software Developer"
+							</span>,
+						</p>
+
+						<p class="indent-2">
+							focus:
+							<span class="code-green">
+								"Cybersecurity"
+							</span>,
+						</p>
+
+						<p class="indent-2">
+							automation:
+							<span class="code-blue">
+								true
+							</span>
+						</p>
+
+						<p class="indent">
+							};
+						</p>
+
+						<p class="cursor">_</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<!-- ================= ABOUT ================= -->
+
+		<section class="section about" id="about">
+
+			<div class="section-header">
+
+				<span class="section-number">01</span>
+
+				<h2>
+					About <span>me</span>
+				</h2>
+
+			</div>
+
+			<div class="about-grid">
+
+				<div class="about-text">
+
+					<p class="highlight">
+						I build software, automate processes and explore
+						cybersecurity.
+					</p>
+
+					<p>
+						I'm a developer with experience working on web,
+						mobile and backend applications. I enjoy turning
+						problems into practical technical solutions.
+					</p>
+
+					<p>
+						My current interests combine software development,
+						cybersecurity, APIs, databases and automation.
+					</p>
+
+					<div class="about-stats">
+
+						<div>
+							<strong>Full Stack</strong>
+							<span>Development</span>
+						</div>
+
+						<div>
+							<strong>Mobile</strong>
+							<span>React Native</span>
+						</div>
+
+						<div>
+							<strong>Security</strong>
+							<span>Automation</span>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="about-card">
+
+					<div class="about-card-icon">
+						<i class="fas fa-terminal"></i>
+					</div>
+
+					<p>
+						Currently building projects that combine
+						<strong>software development</strong>,
+						<strong>automation</strong> and
+						<strong>cybersecurity</strong>.
+					</p>
+
+				</div>
+
+			</div>
+
+		</section>
+
+
+		<!-- ================= SKILLS ================= -->
+
+		<section class="section skills" id="skills">
+
+			<div class="section-header">
+
+				<span class="section-number">02</span>
+
+				<h2>
+					Tech <span>Stack</span>
+				</h2>
+
+			</div>
+
+			<p class="section-description">
+				Technologies and tools I use to build, automate and deploy
+				applications.
 			</p>
-		
-	</div>
 
-	<div class="banner_img">
-		<img class="map" src="portafolio/images/fondo.svg" alt="">
-	</div>
+			<div class="skills-grid">
 
+				<!-- Frontend -->
 
-</section>
-<!--home section ends-->
+				<article class="skill-category">
 
-<!--  menu section starts -->
- <section class="menu" id="skills">
-	 <h1 class="heading"><span>SKI</span>LLS</h1>
-	 <div class="box-container">
-		 <div class="box">
-			 <img src="portafolio/images/lenguajes/html.jpeg" alt="">
-			 <h3>HTML</h3>
-			 
-			 
-		 </div>
-		 <div class="box">
-			<img src="portafolio/images/lenguajes/css.png" alt="">
-			<h3>CSS</h3>
-		</div>
-		<div class="box">
-			<img src="portafolio/images/lenguajes/js.png" alt="">
-			<h3>JS</h3>
-			
-		</div>
-		<div class="box">
-			<img src="portafolio/images/lenguajes/php.png" alt="">
-			<h3>PHP</h3>
-			
-		</div>
-		<div class="box">
-			<img src="portafolio/images/lenguajes/laravel.jpg" alt="">
-			<h3>LARAVEL</h3>
+					<div class="skill-category-header">
 
-		</div>
-		<div class="box">
-			<img src="portafolio/images/lenguajes/python.jpg" alt="">
-			<h3>python</h3>
-		
-		</div>
-	 </div>
- </section>
-<!--  menu section ends -->
+						<i class="fas fa-code"></i>
 
+						<h3>Frontend</h3>
 
-
-
-<!-- blog section starts -->
-<section class="blogs" id="projects">
-
-	<h1 class="heading"> PROJ<span>ECTS</span> </h1>
-
-	<div class="box-container">
-
-			<div class="box">
-					<div class="image">
-							<img src="portafolio/images/yep.jpg" alt="">
 					</div>
-					<div class="content">
-							<a href="#" class="title">yep!</a>
-							<span>Centro ¡Supérate! Hilasal Project</span>
-							<p>Yep! is an app to in which you can find information about volunteers in El Slavador and outside our borders</p>
-							<a href="#" class="btn">Visit!</a>
+
+					<div class="skill-list">
+
+						<span>HTML5</span>
+						<span>CSS3</span>
+						<span>JavaScript</span>
+						<span>React</span>
+
 					</div>
+
+				</article>
+
+
+				<!-- Backend -->
+
+				<article class="skill-category">
+
+					<div class="skill-category-header">
+
+						<i class="fas fa-server"></i>
+
+						<h3>Backend</h3>
+
+					</div>
+
+					<div class="skill-list">
+
+						<span>Node.js</span>
+						<span>Python</span>
+						<span>FastAPI</span>
+						<span>PHP</span>
+						<span>Laravel</span>
+						<span>REST APIs</span>
+
+					</div>
+
+				</article>
+
+
+				<!-- Mobile -->
+
+				<article class="skill-category">
+
+					<div class="skill-category-header">
+
+						<i class="fas fa-mobile-screen"></i>
+
+						<h3>Mobile</h3>
+
+					</div>
+
+					<div class="skill-list">
+
+						<span>React Native</span>
+						<span>Firebase</span>
+						<span>AsyncStorage</span>
+
+					</div>
+
+				</article>
+
+
+				<!-- Database -->
+
+				<article class="skill-category">
+
+					<div class="skill-category-header">
+
+						<i class="fas fa-database"></i>
+
+						<h3>Database</h3>
+
+					</div>
+
+					<div class="skill-list">
+
+						<span>PostgreSQL</span>
+						<span>MySQL</span>
+						<span>Firestore</span>
+
+					</div>
+
+				</article>
+
+
+				<!-- DevOps -->
+
+				<article class="skill-category">
+
+					<div class="skill-category-header">
+
+						<i class="fab fa-docker"></i>
+
+						<h3>DevOps</h3>
+
+					</div>
+
+					<div class="skill-list">
+
+						<span>Git</span>
+						<span>GitHub</span>
+						<span>Docker</span>
+						<span>Linux</span>
+
+					</div>
+
+				</article>
+
+
+				<!-- Security -->
+
+				<article class="skill-category">
+
+					<div class="skill-category-header">
+
+						<i class="fas fa-shield-halved"></i>
+
+						<h3>Security & Automation</h3>
+
+					</div>
+
+					<div class="skill-list">
+
+						<span>SIEM</span>
+						<span>Security Monitoring</span>
+						<span>n8n</span>
+						<span>Automation</span>
+						<span>Networking</span>
+
+					</div>
+
+				</article>
+
 			</div>
 
-			<div class="box">
-					<div class="image">
-							<img src="portafolio/images/mantenimiento.jpg" alt="">
-					</div>
-					<div class="content">
-							<a href="#" class="title">en mantenimiento</a>
-							<span>Disponible el 24/6/2023</span>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-							<a href="#" class="btn">read more</a>
-					</div>
+		</section>
+
+
+		<!-- ================= PROJECTS ================= -->
+
+		<section class="section projects" id="projects">
+
+			<div class="section-header">
+
+				<span class="section-number">03</span>
+
+				<h2>
+					Featured <span>Projects</span>
+				</h2>
+
 			</div>
 
-			<div class="box">
-					<div class="image">
-							<img src="portafolio/images/mantenimiento.jpg" alt="">
+			<p class="section-description">
+				A selection of projects where I apply software development,
+				mobile development, automation and cybersecurity.
+			</p>
+
+
+			<div class="projects-grid">
+
+
+				<!-- PROJECT 1 -->
+
+				<article class="project-card">
+
+					<div class="project-image">
+
+						<img src="portafolio/images/p1.jpg" alt="Yep application" loading="lazy">
+
+						<div class="project-overlay">
+
+							<a href="https://simuladoraritmetico.vercel.app/" aria-label="View Yep project">
+								<i class="fas fa-arrow-up-right-from-square"></i>
+							</a>
+
+						</div>
+
 					</div>
-					<div class="content">
-							<a href="#" class="title">en mantenimiento</a>
-							<span>Disponible el 24/6/2023</span>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-							<a href="#" class="btn">read more</a>
+
+					<div class="project-content">
+
+						<div class="project-meta">
+							<span>Web</span>
+							<span>¡Supérate! Hilasal</span>
+						</div>
+
+						<h3>Excel Calculations Mastery</h3>
+
+						<p>
+							A website focused on strengthening students' mathematical skills for Expert-level Excel
+							certification.
+						</p>
+
+						<div class="project-tech">
+
+							<span>JS</span>
+
+						</div>
+
 					</div>
+
+				</article>
+
+
+				<!-- PROJECT 2 -->
+
+				<article class="project-card">
+
+					<div class="project-image ">
+
+						<img src="portafolio/images/p2.jpg" alt="Yep application" loading="lazy">
+
+						<div class="project-overlay">
+
+							<a href="https://excelexpertsimulator.vercel.app" aria-label="View Yep project">
+								<i class="fas fa-arrow-up-right-from-square"></i>
+							</a>
+
+						</div>
+
+					</div>
+
+					<div class="project-content">
+
+						<div class="project-meta">
+							<span>Web</span>
+							<span>¡Supérate! Hilasal</span>
+						</div>
+
+						<h3>Excel Expert Simulator</h3>
+
+						<p>
+							A site focused on practicing for the official Expert Excel certification exam.
+						</p>
+
+						<div class="project-tech">
+
+							<span>JS</span>
+							<span>Excel</span>
+
+						</div>
+
+					</div>
+
+				</article>
+
+
+				<!-- PROJECT 3 -->
+
+				<article class="project-card">
+
+					<div class="project-image">
+
+						<img src="portafolio/images/p3.jpg" alt="Yep application" loading="lazy">
+
+						<div class="project-overlay">
+
+							<a href="https://excelexpertsimulatorweb.vercel.app/" aria-label="View Yep project">
+								<i class="fas fa-arrow-up-right-from-square"></i>
+							</a>
+
+						</div>
+
+					</div>
+
+					<div class="project-content">
+
+						<div class="project-meta">
+							<span>Web</span>
+							<span>¡Supérate! Hilasal</span>
+						</div>
+
+						<h3>Simulator Excel Expert - Office 365 Version</h3>
+
+						<p>
+							A site designed as an alternative for individuals who do not have Excel installed on their computers, allowing them to use the Office 365 version to practice for the Excel Expert certification.
+						</p>
+
+						<div class="project-tech">
+
+							<span>Js</span>
+							<span>Office 365</span>
+
+						</div>
+
+					</div>
+
+				</article>
 			</div>
 
-	</div>
+		</section>
 
-</section>
-<!-- blog section ends -->
 
-<!-- contact section srarts -->
-<section class="contact" id="contact">
-	<h1 class="heading">Let's <span> Connect</span></h1>
- <div class="row">
-	<iframe  class="map" src="portafolio/images/Emails-pana.svg"></iframe>
-	<form action="https://formsubmit.co/sergiovarela355@gmail.com"  method="POST" >
-		<h3>send me your message</h3>
-		<div class="inputBox">
-				<span class="fas fa-user"></span>
-				<input type="text" placeholder="Name" name="name">
+		<!-- ================= CONTACT ================= -->
+
+		<section class="section contact" id="contact">
+
+			<div class="contact-container">
+
+				<div class="contact-info">
+
+					<span class="section-number">04</span>
+
+					<h2>
+						Let's <span>Connect</span>
+					</h2>
+
+					<p>
+						Have a project, idea or opportunity?
+						Let's talk.
+					</p>
+
+					<div class="contact-links">
+
+						<a href="mailto:sergiovarela355@gmail.com">
+
+							<i class="fas fa-envelope"></i>
+
+							<span>
+								sergiovarela355@gmail.com
+							</span>
+
+						</a>
+
+						<a href="https://www.linkedin.com/in/sergio-varela-43a484249/" target="_blank"
+							rel="noopener noreferrer">
+
+							<i class="fab fa-linkedin"></i>
+
+							<span>
+								LinkedIn
+							</span>
+
+						</a>
+
+						<a href="https://github.com/varela-lang" target="_blank" rel="noopener noreferrer">
+
+							<i class="fab fa-github"></i>
+
+							<span>
+								GitHub
+							</span>
+
+						</a>
+
+					</div>
+
+				</div>
+
+
+				<form action="https://formsubmit.co/sergiovarela355@gmail.com" method="POST" class="contact-form">
+
+					<div class="input-group">
+
+						<label for="name">
+							Name
+						</label>
+
+						<input type="text" id="name" name="name" placeholder="Your name" required>
+
+					</div>
+
+
+					<div class="input-group">
+
+						<label for="email">
+							Email
+						</label>
+
+						<input type="email" id="email" name="email" placeholder="you@email.com" required>
+
+					</div>
+
+
+					<div class="input-group">
+
+						<label for="message">
+							Message
+						</label>
+
+						<textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+							required></textarea>
+
+					</div>
+
+					<input type="hidden" name="_captcha" value="false">
+
+					<input type="hidden" name="_next" value="https://varela-lang.github.io/portafolio/">
+
+					<button type="submit" class="btn btn-primary">
+						Send message
+						<i class="fas fa-paper-plane"></i>
+					</button>
+
+				</form>
+
+			</div>
+
+		</section>
+
+	</main>
+
+
+	<!-- ================= FOOTER ================= -->
+
+	<footer class="footer">
+
+		<div class="footer-content">
+
+			<a href="#home" class="logo">
+				Sergio<span>.</span>
+			</a>
+
+			<p>
+				Software Developer · Cybersecurity · Automation
+			</p>
+
+			<div class="footer-social">
+
+				<a href="https://github.com/varela-lang" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+					<i class="fab fa-github"></i>
+				</a>
+
+				<a href="https://www.linkedin.com/in/sergio-varela-43a484249/" target="_blank" rel="noopener noreferrer"
+					aria-label="LinkedIn">
+					<i class="fab fa-linkedin"></i>
+				</a>
+
+			</div>
+
 		</div>
-		<div class="inputBox">
-				<span class="fas fa-envelope"></span>
-				<input type="email" placeholder="Email" name="email">
+
+		<div class="footer-bottom">
+
+			<p>
+				© 2026 Sergio Varela.
+			</p>
+
 		</div>
-		<div class="inputBox">
-				<span class="fas fa-phone"></span>
-				<input type="number" placeholder="Number">
-		</div>
-		<div class="inputBox">
-			<span class="fas fa-envelope"></span>
-			<input type="text" placeholder="Message" name="coments">
-	</div>
-		<input type="submit" value="contact now" class="btn">
-		<input type="hidden" name="_captcha" value="false">
-		<input type="hidden" name="_next" value="https://varela-lang.github.io/portafolio/">
-    </form>
 
-   </div>
-  </div>
-</section>
-<!-- contact section sends -->
-
-<!-- footer section starts -->
-
-<section class="footer">
-	<div class="credit">
-		 <p class="orignal">Portafolio | Sergio Varela</p>
-	</div>
-</section>
-<!-- footer section ends -->
+	</footer>
 
 
+	<!-- Scripts -->
+
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+	<script src="portafolio/js/app.js"></script>
+
+	<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+	<script src="portafolio/js/main.js"></script>
+
+	<script>
+
+		const menuBtn = document.querySelector("#menu-btn");
+		const navbar = document.querySelector("#navbar");
+
+		menuBtn.addEventListener("click", () => {
+
+			navbar.classList.toggle("active");
+
+			const expanded =
+				menuBtn.getAttribute("aria-expanded") === "true";
+
+			menuBtn.setAttribute(
+				"aria-expanded",
+				!expanded
+			);
+
+		});
 
 
-<!-- custom js file link  -->
-<script>
-	
-let navbar = document.querySelector('.navbar');
+		document.querySelectorAll(".navbar a").forEach(link => {
 
-document.querySelector('#menu-btn').onclick = () =>{
-    navbar.classList.toggle('active');
-}
+			link.addEventListener("click", () => {
 
+				navbar.classList.remove("active");
 
-window.onscroll = () =>{
-    navbar.classList.remove('active');
-}
-</script>
+				menuBtn.setAttribute(
+					"aria-expanded",
+					"false"
+				);
 
-<!-- Js para las particulas-->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script src="portafolio/js/app.js"></script>
+			});
 
-<!-- Efecto escritura-->
-<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-<script src="portafolio/js/main.js"></script>
+		});
+
+	</script>
 
 </body>
+
 </html>
