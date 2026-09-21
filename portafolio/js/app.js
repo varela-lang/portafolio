@@ -110,3 +110,78 @@ particlesJS(
         "retina_detect": true
       }
 )
+
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", async function (event) {
+
+    event.preventDefault();
+
+    const submitButton = document.getElementById("submit-btn");
+
+    submitButton.disabled = true;
+
+    submitButton.innerHTML = `
+        Sending...
+        <i class="fas fa-spinner fa-spin"></i>
+    `;
+
+
+    const formData = new FormData(contactForm);
+
+
+    try {
+
+        const response = await fetch(
+            "https://formsubmit.co/ajax/sergiovarela355@gmail.com",
+            {
+                method: "POST",
+
+                body: formData,
+
+                headers: {
+                    "Accept": "application/json"
+                }
+            }
+        );
+
+
+        if (response.ok) {
+
+            alert(
+                "✅ ¡He recibido tu mensaje!\n\n" +
+                "Gracias por contactarme. Pronto te responderé."
+            );
+
+            contactForm.reset();
+
+        } else {
+
+            alert(
+                "❌ No se pudo enviar el mensaje.\n\n" +
+                "Por favor, inténtalo nuevamente."
+            );
+
+        }
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert(
+            "❌ Ocurrió un error al enviar el mensaje.\n\n" +
+            "Por favor, inténtalo nuevamente."
+        );
+
+    } finally {
+
+        submitButton.disabled = false;
+
+        submitButton.innerHTML = `
+            Send message
+            <i class="fas fa-paper-plane"></i>
+        `;
+
+    }
+
+});
